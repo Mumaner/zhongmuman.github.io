@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="木蛮">
+
+
+    <meta name="subtitle" content="木蛮的小窝">
+
+
+    <meta name="description" content="送花的喜欢收花的<br><font size=1>The lying girl loves the silly boy.</font>">
+
+
+
+<title>Markdown使用 | 木蛮</title>
+
+
+
+    <link rel="icon" href="/image/%E8%9B%AE-32x32.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">木蛮</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">木蛮</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6;    // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function () {
+            tocbot.refresh(obj_merge(tocbot_default_config, { hasInnerContainers: true }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function () {
+        tocbot.init(obj_merge(tocbot_default_config, { collapseDepth: 1 }));
+    });
+
+    function expandToc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, { collapseDepth: expanded ? 1 : DEPTH_MAX }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Markdown使用</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">木蛮</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">四月 9, 2022&nbsp;&nbsp;19:13:33</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/">乱七八糟</a>
+                            
+                                <a href="/categories/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/blog/">blog</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="markdwon使用"><a href="#markdwon使用" class="headerlink" title="markdwon使用"></a>markdwon使用</h1><p>使用情景：blog  </p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li><p><strong>我的软件：Visual Studio Code</strong><br>  <em>markdown预览：ctrl+shift+p - 搜索markdown:open locked preview to the side</em>   </p>
+<ul>
+<li><em>有人推荐typora，但是我下了之后没找到预览视图，用不习惯。</em></li>
+</ul>
+</li>
+<li><p>markdown抬头格式  </p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---  </span><br><span class="line">title: markdown使用  </span><br><span class="line">date: 2022-04-09 19:13:33  </span><br><span class="line">tag:  </span><br><span class="line">category: blog  </span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="常见元素"><a href="#常见元素" class="headerlink" title="常见元素"></a>常见元素</h2><table>
+<thead>
+<tr>
+<th>元素</th>
+<th>对应符号</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标题</td>
+<td>#（个数越多级数越多）</td>
+<td><em>逻辑：markdown（ Heading level 1）–html（&lt;’h1&gt;Heading level 1&lt;&#x2F;‘h1&gt;）–渲染输出</em></td>
+</tr>
+<tr>
+<td>段落</td>
+<td>空白行</td>
+<td></td>
+</tr>
+<tr>
+<td>换行</td>
+<td>在该行末尾打两个以上空格后enter</td>
+<td>或者直接分段吧[i.e.空白行]</td>
+</tr>
+<tr>
+<td>着重</td>
+<td>*或_ 一个为斜体两个为加粗三个为又斜又粗</td>
+<td></td>
+</tr>
+<tr>
+<td>删除线</td>
+<td>~</td>
+<td></td>
+</tr>
+<tr>
+<td>清单</td>
+<td>1.（有序清单）[下一级：缩进即可]；-或+或*(符点无序清单)</td>
+<td>数字不必按数字顺序排列，但列表应以数字开头。（即使你的数字编码是乱的，它也会以正确顺序输出）； 要在保留列表连续性的同时在列表中添加另一个元素，则需要缩进</td>
+</tr>
+<tr>
+<td>水平线</td>
+<td>***或—或____</td>
+<td>三个以上即可</td>
+</tr>
+</tbody></table>
+<ul>
+<li>注意事项：<ul>
+<li>使用空格</li>
+<li>四个空格或tab为缩进</li>
+<li>中英文符号</li>
+<li>可以多用清单符号创建层级</li>
+</ul>
+</li>
+</ul>
+<h2 id="不常见使用"><a href="#不常见使用" class="headerlink" title="不常见使用"></a>不常见使用</h2><ul>
+<li>表格<ul>
+<li>基本格式  <table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody></table>
+</li>
+<li>示例  <blockquote>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名字</td>
+<td>木蛮</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p>  - </p>
+</li>
+<li>对齐<br>  ：[左对齐；居中；右对齐]</li>
+</ul>
+</li>
+</ul>
+<p><strong>- 任务清单</strong><br>- []空白方块； - [x] 打勾的方块<br><em>注：vs code没有此功能（可能需要安装拓展吧）。我没有学会如何安拓展（我觉得是得用梯子）</em></p>
+<ul>
+<li>链接到标题【标题编号】<br>  示例：<br>   &#96;### My Great Heading</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>木蛮</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://zhongmuman.github.io/2022/04/09/markdown%E4%BD%BF%E7%94%A8/">http://zhongmuman.github.io/2022/04/09/markdown%E4%BD%BF%E7%94%A8/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2022/04/10/gitee-hexo-next%E4%B8%BB%E9%A2%98blog%E6%90%AD%E5%BB%BA%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">Gitee+hexo Next主题blog搭建经验总结</a>
+            
+            
+            <a class="next" rel="next" href="/2022/04/08/%E7%A2%8E%E8%AF%AD/">碎语</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 木蛮 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

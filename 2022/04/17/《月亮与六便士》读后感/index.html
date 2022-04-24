@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="木蛮">
+
+
+    <meta name="subtitle" content="木蛮的小窝">
+
+
+    <meta name="description" content="送花的喜欢收花的<br><font size=1>The lying girl loves the silly boy.</font>">
+
+
+
+<title>《月亮与六便士》读后感 | 木蛮</title>
+
+
+
+    <link rel="icon" href="/image/%E8%9B%AE-32x32.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">木蛮</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">木蛮</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6;    // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function () {
+            tocbot.refresh(obj_merge(tocbot_default_config, { hasInnerContainers: true }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function () {
+        tocbot.init(obj_merge(tocbot_default_config, { collapseDepth: 1 }));
+    });
+
+    function expandToc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, { collapseDepth: expanded ? 1 : DEPTH_MAX }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">《月亮与六便士》读后感</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">木蛮</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">四月 17, 2022&nbsp;&nbsp;20:48:26</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>声明：</p>
+<ol>
+<li>这本书我认真读了，印象也确实不深。思特里克兰德形象总觉得不丰满，像是隔了一层窗户。反而是戴尔克和勃朗什，让我觉得是活人。</li>
+<li>作品一旦被作者创造出来就不属于作者了。虽然我见识浅薄，但是我也可以谈谈自己的看法。</li>
+</ol>
+<h1 id="阅读原因"><a href="#阅读原因" class="headerlink" title="阅读原因"></a>阅读原因</h1><p>我，深感无意义，总想找寻意义，把为了意义不顾一切视为自由与浪漫。而毛姆的书，恰恰是关于自由、意义的。</p>
+<h1 id="读后感"><a href="#读后感" class="headerlink" title="读后感"></a>读后感</h1><h2 id="生命的秘密"><a href="#生命的秘密" class="headerlink" title="生命的秘密"></a>生命的秘密</h2><h3 id="不安"><a href="#不安" class="headerlink" title="不安"></a>不安</h3><blockquote>
+<p>这一定是无数对夫妻的故事，而它提供的生活模式有一种充满了家庭气息的魅力。它让我联想到一条平静的小溪，在绿色的牧草之间和郁郁葱葱的树荫底下蜿蜒流过，直到最终汇入广阔的大海；<strong>但大海是如此的平静，如此的淡漠，让你突然隐约感到些许的不安</strong>……我觉得这种生存方式中——大部分人都是这样度过——某种东西出了差错。我承认这样的生活有它的社会价值，我看得到它井然有序的幸福，但我的血液中有一种热切的渴望，寻求一条更加狂放不羁的道路。在这种舒适的快乐中似乎有什么东西让我惊恐不安……我随时准备前往崎岖的暗礁和充满危险的浅滩。</p>
+</blockquote>
+<p>思特里克兰德在伦敦时，住在妻子精心布置的华美的家里、宴请着有权有势的宾客、被塞进与他的气质格格不入的衣服里，扮演着经纪人、丈夫、父亲的角色，被给予各式的他人或者社会的期望，当着一个无聊老实的好人。生活总有无聊不如意的时候，但大体上总归是令人满意的。不需要担心钱，妻子体贴温柔，孩子可爱聪明。<br>离开伦敦后，无论巴黎还是塔希提，思特里克兰德的生活条件一直都不好。但是破旧的衣服他才穿的舒服，简陋阴暗的小屋更像是他住的地方。伦敦的优渥生活符合社会价值观，但却不是他想要的。  </p>
+<p>总有一个声音在说生命不应该是这样的。没有好坏，只是不合适。正如我如野草寂寞生长，永远无法装扮成娇嫩的花朵般的淑女。狂野的狮子又怎么能够像宠物狗一样安心待在主人精心布置的温暖舒适的小窝里？我知道我的生命在逝去，我会变老，身体变差，脑子变笨。而我却在温水中当一只被煮的青蛙，在楚门的世界里兜兜转转，任生命在平静中逝去。我的生命只是为了这样子吗？一眼就看到了头。我的一生乏味到我自己都不感兴趣。这样的生命，明天就死去和百年后再死去又有什么差别？ 自称为万物主宰的人类与低级动物又有何区别？<br>不只只是这些。上帝赋予了我更灵活的五指我可以使用工具，上帝赋予了我更发达的大脑我可以创造思想。而我却只是用这一切来生存。我已洞知生命没有意义，可是一定有某些东西于我而言是高于其他一切的存在，只是我尚不知晓。我四肢健全、年纪正轻、脑子谈不上顶聪明但也还算好使。如若让一切天赋白白浪费，那也算是咎由自取。  </p>
+<p>说一下另一种不安。今天听人讲有的人没怎么学还一年过了4门CPA。比我聪明的多的是、比我起点高的多的是、比我努力的多的是。在我刷视频、打游戏、听音乐的时候，可能他们又跨过了一个高峰。 我还担心自己视野太小了，担心我的所思所想都是南辕北辙。<br>呵，说了这些是不是还可焦虑？另一方面，我只是一棵野草，无需羡慕繁星。我能感受到凳子的舒适柔软、能感受到手指敲击键盘的快感、能感受到胡思乱想的亲切，我知道我现在在做什么，我知道我所在的此时此刻才是真实。总有更聪明的人、总有比都没法比的对象。横向对比有其好处，但是纵向对比才更能把捉。就让我当个无甚追求对社会无甚益处的咸鱼。</p>
+<p><em><strong>关于我的追求：修自</strong></em>  </p>
+<ul>
+<li>具体追求：知识技能的习得与实践</li>
+<li>举例：道、瑜伽、太极、哲学、语言、杂书……</li>
+<li><em>如同玄幻小说，在修真路上不断精进</em>  </li>
+<li><em>关键因素: 扬长避短；兴趣导向；专精；多实践</em>  <ul>
+<li><em>多实践：成果带来的成就感</em></li>
+<li><em>兴趣导向：<strong>涉猎广泛</strong>，从而找到自己的兴趣</em></li>
+<li><em>专精：精力是有限的，贵精不贵多；不可三天打鱼两天晒网；不可一会儿想东一会儿想西</em></li>
+</ul>
+</li>
+<li>结合自身具体规划：<ul>
+<li>我承认，我现在正是为生计奔命的关键阶段，委实不能花太多时间搞杂七杂八的。这并不是对自我追求的背离，而是为了以后能够有更多的时间去追求。请一定要好好学习好好努力。</li>
+<li>但是并不意味着我现在要完全放弃思考。就像我之前计划的，每天练字、反思总结，还有闲暇时间可以看点道德经之类的。这都是对我追求的某种东西的靠近。</li>
+<li>那么，为生计奔命算什么呢？我尚想不清楚。但是，我有两个解释。第一，如果我每天只匀出了十分钟去思考，那么其他的时间只要想到这即将到来的十分钟就会欣喜不已。第二，只有更好地更有效率地工作，才能够匀出更多的时间去追求。</li>
+</ul>
+</li>
+</ul>
+<h3 id="汹涌"><a href="#汹涌" class="headerlink" title="汹涌"></a>汹涌</h3><blockquote>
+<p>“我想画画”<br>“但你已经四十岁了。”<br>“正因为这样，我才觉得自己应该开始了。”</p>
+<p>我必须画画。我控制不住我自己。<strong>如果一个人掉进水里，他游泳游得好不好不重要：他必须游出去，否则就会淹死</strong>。</p>
+</blockquote>
+<p>如果只能看到河水平静流动时还可以对它深处的不安不以为意，那么当看到波涛汹涌的大海便再也无法视而不见了。思特里克兰德终于被某种强大的东西给抓住了，使得他不得不抛下过去的一切跑到巴黎去画画。至于以往的安稳环境、孩子妻子等人给予的期待、自己是否有天赋、以后是否能成功，都不在他的考虑范围内了。<br>听从我心，无问西东。判断一件事要不要做的最高标准，便是我到底想不想做。</p>
+<blockquote>
+<p>我们过着与世无争的生活，感到非常幸福。世界上很多人为了他们的理想而奋斗一生，但最终能达到目标的人只有少数。我们没有野心，过着简单淳朴的生活。我们也有自己的骄傲。我们现在的生活是凭自己的双手打拼出来的，我们想到这一点时，就会感到无比的骄傲。我们从不嫉妒别人，因为我们对自己的生活已经心满意足。</p>
+<p>关键在于他认为生活具有怎样的意义，在于他认为自己应该尽怎样的社会义务，在于他对自己是怎样的要求。</p>
+</blockquote>
+<p>听从自己内心的声音。</p>
+<blockquote>
+<p>一本书想要从这么多的书中脱颖而出，这几率该会是多么的渺小呀！即使有些书获得了成功，也不过只是暂时的成功罢了。天知道作者写书的时候遭受了怎样的千辛万苦，忍受了怎样痛苦的磨难，绞尽了脑汁，才给了读者一个机会，使他们可以获得几个小时的消遣，或者打发旅途中的无聊……作者应该从写作的快乐和思想负担的释放之中寻找回报；而且，不关心任何其他的事情，不在乎任何事情，无论是赞扬还是指责，失败抑或成功。</p>
+<p><strong>我觉得他们的激情缺少活力，他们的梦想也有些乏味。我并不喜欢他们。我已经年老无用，我会继续用押韵对句写道德说教的故事，但如果我除了自娱自乐以外还有别的目的，那我就是个十足的傻瓜了。</strong></p>
+<p><strong>人们太看重别人对自己的看法，太害怕舆论对自己的批评，这样反倒自己给自己树立了敌人。良心监视着我们，它既忠实地维护着主人的尊严，又把人们置于社会的大框架之下，凡事以社会利益为先</strong>……人们总是告诫自己，个人利益不是最重要的，肯定有一种利益是凌驾于它之上的……<strong>人们把这种至高无上的利益太伤了王座，自己则像是歌功颂德的大臣一样虔诚地匍匐在它脚下。人们为拥有良心的自己感到无比骄傲，自诩社会的一员。然后他们就会理所当然地指责那些在他们看来没有良心的人，让他们不敢反抗自己。</strong> 然而，斯特克兰德是个例外，他不在意别人的指责，对自己不负责任的行为也没有一丝一毫的愧疚。  </p>
+</blockquote>
+<p>想要听到自己的声音，就要学会去剔除噪声。别人的期待、自己的期待，以及更多。我和真我，总还有段距离。  </p>
+<p>讲一个故事。前几天文献分享，分享完了就没有了。没有一点反馈，无论是好是坏。这让我很失落。努力好像突然没了意义。不只只是这一件事，我已经好久没有受到肯定。唐老师的《快马加鞭》很符合我当时的心情。我的世界里一定是有哪些地方出错了，我不服、我想打破这一切。我小时候成绩尚可，211都不放在眼里，参加北理工的高校专项时我也没打算进这个学校，可能我当时只知道清北复交吧。然后兜兜转转我来到了一个河南普一，现在唯一的目标就是一辈子衣食无忧。就很可笑。时光无法从来，即使从来我也未必能做得多好。现在也只能看玄幻小说意淫自己牛逼的不行了吧。</p>
+<blockquote>
+<p>大江东去，浪淘尽，千古风流人物。<br>故垒西边，人道是，三国周郎赤壁。<br>乱石穿空，惊涛拍岸，卷起千堆雪。<br>江山如画，一时多少豪杰。</p>
+<p>遥想公瑾当年，小乔初嫁了，雄姿英发。<br>羽扇纶巾，谈笑间，樯橹灰飞烟灭。<br>故国神游，多情应笑我，早生华发。<br>人生如梦，一尊还酹江月。</p>
+</blockquote>
+<p>我有一个大学室友小呆，再怎么着也是高中每天起早贪黑寒窗苦读过来的，现在在一个普普通通的事务所，经常加班到晚上十点，工资也算不上高。听她讲，她同班的一个女生是二本专业收进来的，然后现在在上海铁路局，面试的时候找了点关系，反正现在过得挺好的。<br>我知道其实这世界上机会很多只是我没去抓住，但又总是学黛玉自怜自艾。我也知道像某些软体动物一样只知抱怨的样子真的很丑。  </p>
+<p>再扯点题外话。前几天看有人写了段话，大意说是大学学的理科，但是对科学产生了怀疑，认为远离了人的科学也没什么意思，于是转行了。所以我还真没什么好为我的专业抱怨的。可能我选择哪一行当最后都会感到失望。因为可能最后我都是单纯为了工作而工作而非自我。</p>
+<p>话扯远了。总之，<strong>外界的评价把捉不住，做好自己就好了。</strong></p>
+<h3 id="洞见"><a href="#洞见" class="headerlink" title="洞见"></a>洞见</h3><blockquote>
+<p>有一次，我有一种感觉，他被魔鬼附身；不过，你不能说是恶魔，因为这是一种原始的力量，在区分好与坏之前就已然存在。</p>
+<p><strong>他的外表粗野、没有教养；他目光冷淡、说话淫荡；他身材高大；他给人一种带着未被驯服的激情的感觉；也许，她也感觉到了他身上那种邪恶的成分，这种成分令我想起地球上早期历史时期的那些野生动物；那个时期，物体保持了它与大地的早期的联系，似乎具有其自身的灵魂</strong>。</p>
+<p>他梦见仙女飞过希腊的森林，后面好色的森林之神在穷追不舍吗？她步履匆匆、绝望地逃着，他也默默地追着，等到最后他抓住了她，在她心中激起的到底是恐惧还是狂喜呢？</p>
+<p>这是多么美丽的夜晚，你陶醉在其中，感受自己的灵魂仿佛想要摆脱肉体的舒服。你忽然有一种感觉：<strong>你的灵魂似乎随时都有可能飘在夜空中，你觉得就连面目可憎的死神也变得和蔼可亲了。</strong></p>
+<p>就好比是<strong>在开天辟地的鸿蒙之时一个人心中所涌动的那种激动而又敬畏的感觉</strong></p>
+<p>我认为，他一定将他对生活与世界的理解全部倾注到画画中了。他在画画的过程中，一定可以体会到一种难得的宁静，让他的心灵逃离了魔鬼的囚笼。</p>
+<p>我也无法形容。他的画太奇异了，仿佛是宇宙刚刚形成的画面——伊甸园、亚当和夏娃……我是怎么看出来的呢？他画的不仅是对人体美的强烈歌颂，更是对大自然的一曲赞歌。在他的笔下，<strong>你能感受到大自然的独特气质——既伟大又冷漠，既美丽动人又残酷无情……你会感受到时间是永恒的，空间是无限的，而自己却是那么渺小而短暂。</strong> 他勾勒了许多树，包括榕树、椰子树、鳄树、火焰花……平日里我已经见惯了这些树，但是当我看到他画的那些树时，却又有了新的体会。<strong>他笔下的树仿佛都有各自的灵魂。我从未离它们的灵魂这么近过，仿佛一伸手就能把那些灵魂握在手心似的。</strong> 他用的那些颜色都很常见，但是组合在一起又给人以一种全新的感受，让人觉得它们是无可替代的。至于他笔下的人物——那些一丝不挂的男男女女，他们既属于红尘俗世，又超脱在外。在他的画中，你能看到人的原始本性，它令你深深地恐惧，因为你仿佛透过一面镜子看到了你自己。</p>
+</blockquote>
+<p>小思在伦敦家庭和睦美满幸福，然后突然有一天一种无形的力量促使着他抛下一切去巴黎画画了。他没天赋没钱，但是小戴看的出来他的画很好。然后有一天他去塔希提岛了，在那里一个土著女人疯狂爱着他愿意为了他付出一切不求回报。最终他在那里顿悟了生命的奥秘画出了惊世之作摆脱了那种无形的力量，终于心满意足的离去了。<br>我就吐了个大槽。这buff开的真大。不过也能理解，这个心灵成长的过程确实不好描述。  </p>
+<p>思特里克兰德洞见到的境界具体如上引用的语句。我联想到的就是道母。</p>
+<blockquote>
+<p>唯之与阿，相去几何？<br>善之与恶，相去何若？<br>人之所畏，不可不畏。<br>荒兮，其未央哉!<br>众人熙熙，如享太牢，如春登台。<br>我独泊兮，其未兆，如婴儿之未孩；傫傫兮，若无所归！<br>众人皆有余，而我独若遗。<br>我愚人之心也哉!<br>沌沌兮!<br>俗人昭昭，我独昏昏；俗人察察，我独闷闷。<br>澹兮，其若海，飂兮，若无止。<br>众人皆有以，而我独顽似鄙。<br>我独异于人，而贵食母</p>
+</blockquote>
+<h2 id="价值观"><a href="#价值观" class="headerlink" title="价值观"></a>价值观</h2><h3 id="是与非"><a href="#是与非" class="headerlink" title="是与非"></a>是与非</h3><blockquote>
+<p>在我看来，艺术中最有趣的事情，就是艺术家的个性，而<strong>如果其个性独特，那么就算他有缺点无数，我也愿意原谅</strong>。</p>
+<p>对于一个作家来说，了解人性是他最关心的事情，而判断人性则不是他在意的事情。</p>
+<p><strong>那些故事虽然对别人造成了无法挽回的影响和伤害，但你也可以将它们单纯看成是命运对他们的嘲弄。</strong>真实的思特里克兰德是一个心怀梦想艰苦工作的人。</p>
+</blockquote>
+<p>存在即合理。理解之外，无是无非。  </p>
+<p>我的准则：不伤害别人，做自己。</p>
+<h3 id="生命：轻与重"><a href="#生命：轻与重" class="headerlink" title="生命：轻与重"></a>生命：轻与重</h3><blockquote>
+<p>如果说我对她的死一点也不在意，那我就太没有人性了。她本来可以正常地生活下去，获得生活给她的祝福与恩赐，可是她就这样死了，被死神剥夺了生命，这实在是一件可怕至极的事情。<strong>然而我也感到非常愧疚。因为说真的，我对她的死不是太关心。</strong></p>
+<p>生命本来就没有任何价值。勃朗什·施特略夫自杀的原因和我抛弃她没有一点关系，<strong>纯粹是由于她太傻</strong>。</p>
+<p><strong>不管她活着的时候对生活有怎样的期待和盼望，但她现在已经死了，就像是从未降临世间一样毫无意义</strong>。</p>
+</blockquote>
+<p>我其实挺困惑的。每个人都有自己的追求。打扮的花枝招展的少女、渴望一战成硕的学子、持枪行凶的恐怖分子、望子成龙的父母、危不救矣的病人……有各种各样的执念，它在我们心中那么大那么大，可实际上连我们自己的生命都那么轻。<br>但是，我知道我是存在的，我对于我必须是重要的。<br>还有，每个人都是一座孤岛。总有很多东西无法感同身受，总没有人替我上厕所。</p>
+<h3 id="爱情：轻与重"><a href="#爱情：轻与重" class="headerlink" title="爱情：轻与重"></a>爱情：轻与重</h3><blockquote>
+<p><strong>爱情对我来说是多余的东西，我没有时间去和女人恋爱，我认为它是人性的一个弱点。然而我生来就是一个男人，偶尔我也会需要一个女性。可是当我的情 欲得到满足的时候，我就得立刻去干别的事情了。作为一个男人，我无法战胜我的欲望，这令我很恼火。我非常痛恨它，因为我的精神被它禁锢住了，不得自由……实际上，爱情在生活中是最不重要的那一部分。我认为情欲是正常的、健康的，而爱情则是一种疾病。对我来说，女人是享乐的工具，仅此而已。</strong> 我很厌恶她们提出的那些极其可笑的要求——事业伙伴、生活伴侣之类的。</p>
+<p>我来尽情的想象一下吧，太阳在渐渐西沉，勃朗什的气力也在慢慢的耗尽，然而思特里克兰德仍然在聚精会神地创作。看到他始终对自己不理不睬，全身心投入到绘画中，勃朗什一定非常气愤和不甘心。对于思特里克兰德而言，勃朗什从头到尾都只是一位模特而已。</p>
+<p>小说为什么不够真实正是因为这个原因。正常来说，对于一个男人来讲，爱情不过是生活中的一个小小的片段，是日常生活中的小插曲，但是大多数爱情小说却把它描写得要死要活，夸大其词，让它高贵得甚至超过了在正常生活中它所应当占有的地位。</p>
+</blockquote>
+<p>我之前一直以为爱情很重很重。我认为一生之中只有伴侣会陪伴很久很久，我知道流行音乐反复讴歌着爱情，我听过梁山伯与祝英台、罗密欧与朱丽叶的故事。我相信爱情有无穷的力量。<br>所以我一开始看到思特里克兰德的话时，我认为这只是他的偏见。<br>可是存在即合理。他的话是有道理的。爱情怎么可能那么重要？要让我将爱情视为我一生的追求那可真荒唐可笑。虽然我不合群、没有朋友，虽然我感到孤独与自卑，虽然我也想要灵魂伴侣，但是，没有的话也不至于要死要活。<br>世界那么大，人生那么长，爱情又算得了什么呢？亚历山大踏上了他的又一次征程、大禹治水可以三过家门而不入、武则天为了上位不择手段。我的目光永远向着那不可捉摸的意义与追求，又怎么可能向爱情俯首称臣。<br><strong>但我相信，爱很重很重。一切都是为了爱。</strong>  </p>
+<p>谈到爱情我就想说一些题外话。没经历过恋爱前总是向往，仿佛有了爱情就是另一个世界了。经历过后确实到了另一个世界。不过，一次就好。如果再经历一遍的话，太累了。《生命不能承受的生命之轻》中，萨丽娜在年轻时，和托马斯创造了一个又一个的词汇。等到她再遇到了新的人，也委实无法给予他深厚的爱。因为她的世界已经大致定型了，她的词汇都给了托马斯。以上都是胡言乱语，无甚深意。</p>
+<p>谈到思特里克兰德的肉 欲，我还有一些话要说。性到底是什么？人类繁衍生息靠的就是性。思特里克兰德也说，情 欲是正常的、健康的。我的问题是；为什么要有夫妻制？为什么有过多性伴侣是不道德的？为什么婚前性行为是受指摘的？为什么裸 体是有伤风化的？为什么具荷拉会因裸 照自杀？<br>上帝给了人性 快 感、给了人性 欲，从而使其心甘情愿甚至乐此不疲地成为它的奴隶。可是为什么性又是罪恶的、禁忌的？为什么我有时也会涌出对性的厌恶感？<br>思特里克兰德最后靠瞎眼画成的壁画中， 十几个男女在原始丛林中赤 裸着身体欢欣嬉闹。宇宙伊始、还没有一切人类文明的时候，性是否也和吃喝拉撒一样自然？<br>我没有答案。但是，我是认同思特里克兰德的。我的精神世界绝不能被蚀成废铁。</p>
+<blockquote>
+<p>她对他只是一种被动的感情。他让她吃穿不愁，生活无忧，还给予了她一份珍贵的爱情，她习惯了这些，自然就会报之以感情。</p>
+</blockquote>
+<p>所以我就更怀疑爱情的存在了。医学上可能会给出多巴胺之类的乱七八糟的化学物质的解释，让人很难联想到这就是深厚的人们歌颂的爱情。很难清楚地给爱情下一个界定，所以也难以判断此刻是爱着的还是不爱的。不过，无论是不是爱情，至少可以说这就是爱，虽然这种爱可能有很多缘由。</p>
+<blockquote>
+<p>她明知道前路就是毁灭，也无法控制自己停下脚步。爱情蒙蔽了她的双眼，让她虽然感受到了痛苦，但是依旧相信自己想象出来的幻境就是真实。</p>
+</blockquote>
+<p>自己心里的声音就是真实，这是没毛病的。只是，把可能并不存在的爱情当作真实，只能说勃朗什太傻了。所以，要理性、要明辨真假。</p>
+<h2 id="欲望vs-灵魂"><a href="#欲望vs-灵魂" class="headerlink" title="欲望vs.灵魂"></a>欲望vs.灵魂</h2><blockquote>
+<p><strong>你知道吗？一个坠入情网的人，眼里除了他的爱人，就看不到其他事物了，仿佛是古时候在木船上被迫摇桨的奴隶一样，没有身心的自由。</strong> 那股将斯特里克兰俘获的热情，就好比爱情，把他紧紧地禁锢住了。</p>
+<p>思特里克兰德对于性 生活的欲望非常之小，甚至可以说他是非常嫌弃有欲望的自己的。<strong>他的灵魂跟他的肉体追求的是完全相反的东西</strong>。他的情感一向十分狂热，一旦欲望控制住他的肉体，他就会自然而然的开始纵情狂欢，但他的灵魂对于这种让他不能自控的欲望是相当嫌厌的。<strong>我甚至猜想他是否也同样厌恶着那个同他进行鱼水之欢的性伴侣。在他的理智重新占领高地之后，他看到那个色欲熏心的女人的时候是否会觉得害怕和心惊。他的灵魂会脱离身体，慢慢地飘上天空，看着那身旁赤 裸的女人就好像刚刚蜕变长出翅膀的蝴蝶回头一看自己肮脏恶心的蛹的壳一样。</strong> 艺术的本能就是宣泄……思特里克兰德之所以非常厌恶通过身体的性 欲来发泄胸中汹涌跌宕的情绪，可能就是因为他能够通过绘画、通过艺术创作来满足这一渴望抒发的欲望，<strong>而通过身体的欲望来发泄太过直接太过粗野，没有美感。</strong></p>
+</blockquote>
+<p>我全凭脑子杜撰出来的模型是这样的：</p>
+<blockquote>
+<ol>
+<li>人是一团欲望。</li>
+<li>欲望可以分为肤浅的与深刻的，易逝的与持久的，不重要的与重要的，不紧急的与紧急的。</li>
+<li>人有感性与理性来服务于欲望。感性迫使着人及时满足欲望。</li>
+<li>当同时面对两个欲望，就必须去选择此时此刻去满足哪个欲望了。这时理性就发挥了作用。它区分出了肤浅与深刻、易逝与持久、不重要与重要、不紧急与紧急。显然，深刻的、持久的、重要的、紧急的才是更应当先去满足的欲望。</li>
+<li>当然，理性选择出来了，不代表身体就真的听从了。要想使两者一致，有时还需要意志力的作用。不过，意志力是有限资源。一方面要把有限资源用在刀刃上，另一方面要培养更多的有限资源。  【提到这个我还挺有话说的。以下以学习为例】<ul>
+<li>有限资源的节约：适宜的环境（e.g.图书馆、光线、远离易分散注意力的物品）；<strong>适当放纵欲望</strong> </li>
+<li>培养更多的有限资源：每五十分钟休息十分钟（注意，是休息不是娱乐。娱乐也是耗费精力的。休息最好是冥想、发呆等等）</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<p>而灵魂，就是上面说的深刻的、持久的、重要的欲望。值得一提的是，有的肤浅的欲望甚至可能损伤灵魂。打个不是很恰当的比方，我的灵魂，想要做一个坚持不懈的人，  但我的欲望是打游戏打游戏打游戏。如果我去打游戏了，打了一局还有亿局。最后，我已经变成一个欲望的奴隶、变成一个懒散可怜的软体动物，和坚持不懈的人已经差了十万八千里。</p>
+<h2 id="堕落之歌"><a href="#堕落之歌" class="headerlink" title="堕落之歌"></a>堕落之歌</h2><p>勃朗什，曾在大户人家当家庭教师，勾搭上了少爷，本以为可以明媒正娶，结果挺着大肚子被踹出了家门。走投无路一心求死下遇上了戴尔克。后来不知怎的他俩就结了婚。有一天，戴尔克想将病重的思特里克兰德接到家，并希望勃朗什能精心照看。勃朗什明确地拒绝了。但是戴尔克心太好，仍想把思特里克兰德接到家，并说，“你想一想，自己是不是也曾经陷入过危难，恰好被别人帮了一把？你应该知道，在危难关头得到的帮助是多么重要。如果你看到别人正处于悲惨的境地，你难道不会伸出援助之手吗？”然后勃朗什就答应了，并且照顾精心到了床上，精心到愿意为了思特里克兰德做出一切。但是，她又被抛弃了。于是，她自杀了。<br>最荒谬的一件事是，明明我心也不坏人也踏实，最后却还是走到了这一步。你说好笑不好笑？我觉得和少爷的爱是真实，于是我和他偷尝禁果，结果我被赶出家门。我觉得思特里克兰德是我的真实，他穷他不爱我都没关系，但是他也踹了我。<br>所以说，世事无常，只能燃尽每一分钟的生命。  </p>
+<p>还有哦，其实我堕落的关键点是戴尔克看似温柔的请求。有个东西叫做皮格马利翁效应。你不是偏要这样吗？行，那我就让你这样，我让你看看我最后会有多么坏的结果。<br><strong>我只能说，听从自己内心的声音，不要被噪音干扰自己的抉择。</strong>  </p>
+<p>我还有一点感触。各人有各人的不幸，过好自己已委实不易。</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><ul>
+<li>一些提醒<ul>
+<li>看译本可以多采取几个版本来对照。不然有的翻译真的是曲解原意。</li>
+<li>小说家的书可能也只是种自我宣泄，可别奉为圣经照做。</li>
+</ul>
+</li>
+<li>以后的阅读方向  <ul>
+<li>爱情  <ul>
+<li>不知道《情书》具体是讲什么的。</li>
+<li>回顾一下《荆棘鸟》</li>
+<li>others</li>
+</ul>
+</li>
+<li>《刀锋》回顾</li>
+<li>加缪<ul>
+<li>其实我现在对荒谬、西西弗的问题没有很迫切</li>
+</ul>
+</li>
+<li>希腊神话<ul>
+<li>可以结合一些解读却看</li>
+</ul>
+</li>
+<li>《红楼梦》</li>
+<li>金庸<ul>
+<li>之所以想起来看是因为想看看里面有没有向天问道我命由我不由天的感觉</li>
+</ul>
+</li>
+<li>道德经⭐</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>木蛮</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://zhongmuman.github.io/2022/04/17/%E3%80%8A%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/">http://zhongmuman.github.io/2022/04/17/%E3%80%8A%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2022/04/10/gitee-hexo-next%E4%B8%BB%E9%A2%98blog%E6%90%AD%E5%BB%BA%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">Gitee+hexo Next主题blog搭建经验总结</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 木蛮 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
